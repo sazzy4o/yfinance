@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Invalid Tickers Case Report Document - CMPUT 401 Assignment 2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Invalid Tickers Case Report Document";
+    var mkdocs_page_input_path = "testcase_report_invalidtickers.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CMPUT 401 Assignment 2</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Test Plan</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../testcase.md">Test Case</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../testreport.md">Test Report</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Issues_and_pull_requests/">Temporary Issues & PR</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../testcase_values/">Values Test Case Document</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../testcase_datatests/">Data Tests Case Document</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../testcase_invalidtickers/">Invalid Tickers Case Document</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../testcase_report_values/">Values Test Case Report Document</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../testcase_report_datatests/">Data Tests Case Report Document</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Invalid Tickers Case Report Document</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#general-infromation">General Infromation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#environmental-needs">Environmental Needs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test">Test</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#actual-results">Actual Results</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CMPUT 401 Assignment 2</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Invalid Tickers Case Report Document</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="test-case-invalid-tickers-report">Test Case Invalid Tickers Report</h1>
+<h2 id="general-infromation">General Infromation</h2>
+<p>Test Stage: Unit Testing</p>
+<p>Test Date: Mar 27, 2021</p>
+<p>Testers: Cameron, Ryan</p>
+<p>Test Case Description: Testing the response from invalid ticker requests for the ticker.py file in the yfinance module.</p>
+<p>Test Case Number: 6</p>
+<p>Results: Passed all tests</p>
+<h2 id="introduction">Introduction</h2>
+<p>Requirement(s) to be tested: ticker</p>
+<p>Roles and Responsibilities: The team's goal was to test for the proper response from the .earnings method for multiple different valid and invalid inputs.</p>
+<p>Set Up Procedures:<br>
+Retrieve codebase<br>
+<em>Assuming user has github account and git installed onto their machine</em><br>
+1. <code>git clone https://github.com/sazzy4o/yfinance.git</code>
+Setup Virtual Environment (recommended)<br>
+3. Install venv for Python
+4. Create virtual environment
+<code>virtualenv &lt;desired path&gt;</code>
+4. Activate virtual environment (macOS)
+<code>source &lt;desired path/bin/activate&gt;</code>
+Install Necessary Modules<br>
+5. <code>pip3 install unittest</code>
+6. <code>pip3 install . -editable</code></p>
+<p>Stop Procedures: Press <code>CTRL + C</code></p>
+<h2 id="environmental-needs">Environmental Needs</h2>
+<p>Hardware: Any computer capable of running a modern operating system.</p>
+<p>Software: Any modern operating system capable of running python3.</p>
+<p>Procedural Requirements:<br>
+Ensure the “data” folder contains the correct json files. Must run <code>pip install . -editable</code> inside the yfinance folder in order to install yfinance’s required additional modules.</p>
+<h2 id="test">Test</h2>
+<p>Test Items:<br>
+`invalid = yf.Ticker('InvalidTickerName')
+with self.assertRaises(ValueError):
+    invalid.earnings</p>
+<p>invalid = yf.Ticker('') #test empty
+with self.assertRaises(HTTPError):
+    invalid.earnings</p>
+<p>invalid = yf.Ticker('LEHLQ') #test debunct
+with self.assertRaises(KeyError):
+    invalid.earnings</p>
+<p>invalid = yf.Ticker('GOOE') #test misspelled (like GOOE when we want GOOG)
+with self.assertRaises(KeyError):
+    invalid.earnings</p>
+<p>invalid = yf.Ticker(' ') # test white space
+with self.assertRaises(InvalidURL):
+    invalid.earnings</p>
+<p>invalid = yf.Ticker('123') # test with numbers
+with self.assertRaises(KeyError):
+    invalid.earnings`</p>
+<p>Test Features: System's ability to properly handle invalid inputs</p>
+<p>Input Specifications: N/A, all tests run automatically</p>
+<p>Procedural Steps:<br>
+1. Go to test directory <code>cd test</code>
+2. run command <code>python3 test_tickers.py</code>
+The test case is run with the unittest module. This test case is set up under the “TestDataValues” class, and the tests themselves are all run using the python code: <code>unittest.main()</code>, which is run when the file “test_earnings.py” is run.</p>
+<p>Expected Results of Case:<br>
+The output will say that a test failed if a test failed. It will show the following if the test is completed successfully:</p>
+<p><code>.</code></p>
+<p><code>----------------------------------------------------------------------</code></p>
+<p><code>Ran 1 test in 12.580s</code></p>
+<p><code>OK</code></p>
+<h2 id="actual-results">Actual Results</h2>
+<p>Output Specifications:</p>
+<p><code>.</code></p>
+<p><code>----------------------------------------------------------------------</code></p>
+<p><code>Ran 1 test in 12.580s</code></p>
+<p><code>OK</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../testcase_report_datatests/" class="btn btn-neutral" title="Data Tests Case Report Document"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../testcase_report_datatests/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
