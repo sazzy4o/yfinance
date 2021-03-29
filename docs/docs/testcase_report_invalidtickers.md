@@ -82,7 +82,9 @@ Expected Results of Case:<br>
 The output will say that a test failed if a test failed. It will show the following if the test is completed successfully:
 
 `.`
+
 `----------------------------------------------------------------------`
+
 `Ran 1 test in 12.580s`
 
 `OK`
@@ -91,7 +93,9 @@ The output will say that a test failed if a test failed. It will show the follow
 Output Specifications:
 
 `.`
+
 `----------------------------------------------------------------------`
+
 `Ran 1 test in 12.580s`
 
 `OK`
