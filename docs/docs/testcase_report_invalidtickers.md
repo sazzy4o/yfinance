@@ -69,13 +69,13 @@ invalid = yf.Ticker('123') # test with numbers
 with self.assertRaises(KeyError):
     invalid.earnings`
 
-Test Features:
+Test Features: System's ability to properly handle invalid inputs
 
 Input Specifications: N/A, all tests run automatically
 
 Procedural Steps:<br>
 1. Go to test directory `cd test`
-2. run command `python3 test_earnings.py`
+2. run command `python3 test_tickers.py`
 The test case is run with the unittest module. This test case is set up under the “TestDataValues” class, and the tests themselves are all run using the python code: `unittest.main()`, which is run when the file “test_earnings.py” is run.
 
 Expected Results of Case:<br>
