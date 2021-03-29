@@ -170,6 +170,8 @@ will be written using python and libraries.
   **7 Milestones/Deliverables**                                                       
 
   7.1 Test Schedule
+
+
   | Task Name                            | Start     | Finish   | Effort | Comments                                                               |   |
 |--------------------------------------|-----------|----------|--------|------------------------------------------------------------------------|---|
 | Test Planning                        |  March 21 | March 28 |  2h    |  Ongoing development of test plan document                             |   |
@@ -186,7 +188,9 @@ will be written using python and libraries.
 
 <br>
 
-  7.2   Deliverables                                                                              
+  7.2   Deliverables
+
+                                                                              
 | Deliverable                     | Date / Milestone |
 |---------------------------------|------------------|
 | Text document with team info    | March 28th       |
