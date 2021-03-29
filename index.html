@@ -49,8 +49,6 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href=".">Test Plan</a>
-    <ul class="current">
-    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -121,8 +119,245 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="test-plan-document">Test Plan Document</h3>
-<p><strong>Description: In the Test Plan Document, you will describe the part of the project that you are assigned to as well as the goals of your tests. You will document the assumptions made during the testing and the risks of failure of this piece of code with respect to the whole project.</strong></p>
+                <p><strong>TEST PLAN</strong></p>
+<p><strong>Introduction</strong></p>
+<p>yfinance is a pythonic way to scrape historical Yahoo! Finance market
+data. This was originally developed to fix Yahoo! API but later became
+a solution. yfinance is now a rewrite of the since decommissioned API
+and implements many features from complete historical market data
+retrieval to specific category retrievals (such as earnings).</p>
+<p><br></p>
+<p>1.1 Objectives</p>
+<p>yfinance is a python-based data scraping tool used to retrieve
+historical market data from Yahoo! Finance. This tool was written with
+python to provide an easy alternative to a decommissioned Yahoo! API.
+As a test team, we are specifically focusing on testing “.earnings”
+and “.quarterly_earnings” functions in the ticker.py file</p>
+<p><br></p>
+<p>1.2 Team Members</p>
+<table>
+<thead>
+<tr>
+<th align="center">Name</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Chelsea</td>
+<td>Test - Data tests</td>
+</tr>
+<tr>
+<td align="center">Cameron</td>
+<td>Tester - Ticker tests</td>
+</tr>
+<tr>
+<td align="center">Cam</td>
+<td>Tester- Data tests</td>
+</tr>
+<tr>
+<td align="center">Spencer</td>
+<td>Tester - Test earnings values</td>
+</tr>
+<tr>
+<td align="center">Ryan</td>
+<td>Tester - Ticker Tests</td>
+</tr>
+<tr>
+<td align="center"><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2 Scope</strong></p>
+<p>For this assignment we want to test two specific functions,
+“.earnings” and “.quarterly_earnings”. These are getter functions
+contained in ticker.py. These functions then call
+“_get_fundamentals” in base.py. In order to test the two functions,
+the testers must:</p>
+<ol>
+<li>
+<p>Create mock data for the scraper to retrieve from</p>
+</li>
+<li>
+<p>Write a test function that calls the two specific functions</p>
+</li>
+<li>
+<p>Call the function and view how it runs</p>
+</li>
+<li>
+<p>View results and compare with mock data</p>
+</li>
+</ol>
+<p>Testing will only be completed within the current scope of the two
+given functions. Functions not part of this scope will likely be
+ignored to reduce the complexity of tests.</p>
+<p><br></p>
+<p><strong>3 Assumptions / Risks</strong></p>
+<p><br></p>
+<p>3.1 Assumptions</p>
+<p>Some assumptions that are related to the project:</p>
+<ol>
+<li>Every other function not included in the scope of this project will
+not impede testing results</li>
+<li>Test expectations will be assumed by test creator (like how a
+function should respond)</li>
+</ol>
+<p><br></p>
+<p>3.2 Risks</p>
+<p>There are not many risks to be concerned with but there are a few. The
+main issues arise with communication between the group members. Since
+everything is online, planning and meetings require more effort to set
+up. These risks are triggered by certain tasks and simple mitigation
+plans are used to help combat these risks.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Risk</th>
+<th>Impact</th>
+<th>Trigger</th>
+<th>Mitigation Plan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Communication is all done online. Hard to have effective teamwork.</td>
+<td>High</td>
+<td>Planning a schedule. Divvying out work</td>
+<td>Schedule team meetings in advance. Make sure everyone contributes to the meeting.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Busy schedules among the team (other classes..etc)</td>
+<td>Medium</td>
+<td>Assignment deadline</td>
+<td>Create documents outlining current progress and to-do-list among the team.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tests do not cover all possibilities - could cause an issue with trading bots</td>
+<td>Low</td>
+<td>Invalid data sent to the script</td>
+<td>Rigorous testing of all possible elements, in every possible way we can think of. Will never be 100% risk free though, as testing can only hope to find bugs, not prove correctness of software.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>4 Test Approach</strong></p>
+<p>The project will be following a test schedule of:</p>
+<ol>
+<li>
+<p>Test plan creation</p>
+</li>
+<li>
+<p>Test case creation</p>
+</li>
+<li>
+<p>Test documentation and reporting</p>
+</li>
+</ol>
+<p>Steps 2 and 3 will be repeated as more tests need to be designed.</p>
+<p>Exploring the product will be an important part of testing as the test
+team is not familiar with using the software. Understanding the
+overall code will likely be explored before writing of tests.</p>
+<p><br></p>
+<p>4.1 Problems Found</p>
+<p>By searching the Github repository for yfinance, our team was able to
+find many issues and pull requests that are linked to the
+functionalities that we are testing. The problems that we found with
+the codebase are as follows.</p>
+<ol>
+<li>
+<p>Incorrect data being pulled. (Issue #543)</p>
+</li>
+<li>
+<p>Data is not fetched, empty dataframe being returned (Issues #489,
+    #475, #191, #423, #328, #291, #254, #181) This was fixed
+    with PR #480.</p>
+</li>
+<li>
+<p>Pandas Datareader is not compatible with yfinance (Issue #400)</p>
+</li>
+<li>
+<p>Data is transformed incorrectly, get_earnings() is broken
+    (Issue #223)</p>
+</li>
+</ol>
+<p>As can be seen, the majority of issues found were related to the empty
+dataframe, which has since been fixed. We did not encounter the same
+issues as described in issues #543 and #223, so we did not feel the
+need to address them, as well, these issues are likely due to a deeper
+error in the fetching of the data, or its transformation, which is not
+part of the .earnings or .quarterly_earnings properties. For issue
+#400, this is not described as a functionality issue, nor does the
+yfinance page list itself as compatible with Pandas Datareader, so
+this is a non-issue, at least as far as our testing is concerned.</p>
+<p><br></p>
+<p>4.2 Planned Tests</p>
+<p>A focus on specific categories of tests was developed. This was to
+help divvy out work and to create in depth tests.</p>
+<table>
+<thead>
+<tr>
+<th>Test Category</th>
+<th>Testers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earnings Values</td>
+<td>Spencer</td>
+</tr>
+<tr>
+<td>Invalid Tickers</td>
+<td>Cameron, Ryan</td>
+</tr>
+<tr>
+<td>Data testing</td>
+<td>Cam, Chelsea</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>5 Software Fixes</strong></p>
+<p>a. Is there a pull request that implements a solution to the problems identified by your tests? </p>
+<p>No, all of the pull requests that we found related to our section of the code base were all closed/merged and fixed.</p>
+<p>b. Is there a quick fix that could be proposed to the code so that the code passes the test? </p>
+<p>The tests that we ran successfully completed. The results that we received were what we had expected. For example, invalid tickers returned expected errors instead of producing bad data. This forces the user to input ticker information correctly. No quick fixes are needed to be proposed.
+Since we didn’t find any serious problems with the functionalities that we were testing, we will not be suggesting any fixes, nor will we be linking pull requests. This is simply because we have no suggestions to make, as the code worked as intended.</p>
+<p><br></p>
+<p><strong>6 Test Environment</strong></p>
+<p>Mock data will be used to conduct tests in order to quickly and
+efficiently report test results. This mock data will be developed so
+that the test returns can easily be verified and confirmed. The tests
+will be written using python and libraries.</p>
+<p><br></p>
+<p><strong>7 Milestones/Deliverables</strong>                                                       </p>
+<p>7.1 Test Schedule
+  | Task Name                            | Start     | Finish   | Effort | Comments                                                               |   |
+|--------------------------------------|-----------|----------|--------|------------------------------------------------------------------------|---|
+| Test Planning                        |  March 21 | March 28 |  2h    |  Ongoing development of test plan document                             |   |
+| Review assignment document           |  March 21 | March 21 |  1h    |  First meeting, group went over this                                   |   |
+| Create initial test plan documents   |  March 21 | March 21 |  1h    |  First meeting, group went over this                                   |   |
+|  Review and understand initial code  |  March 21 | March 27 |  .5h   |  Testers created their own tests, thus went over code as they required |   |
+| Create a mock server containing data |  March 21 | March 21 |  .5h   |  Spencer created mock data                                             |   |
+| Test cases – Group 1                 |  March 21 | March 24 |  1h    |  Focused on earnings and quarterly_earnings values                     |   |
+|     Report results                   |  March 24 | March 27 |  2h    |                                                                        |   |
+| Test cases – Group 2                 |  March 27 | March 27 |  1h    |  Focused on invalid tickers                                            |   |
+|     Report results                   |  March 27 | March 27 |  2h    |                                                                        |   |
+| Test cases – Group 3                 |  March 21 | March 24 |  1h    |  Focused on data testing                                               |   |
+|     Report results                   |  March 24 | March 27 |  2h    |                                                                        |   |</p>
+<p><br></p>
+<p>7.2   Deliverables                                                                            <br />
+| Deliverable                     | Date / Milestone |
+|---------------------------------|------------------|
+| Text document with team info    | March 28th       |
+| GitHub fork with documentation: | March 21st       |
+|      Test plan                  | March 24th       |
+|      Test cases                 | March 24th       |
+|      Test report                | March 27th       |</p>
               
             </div>
           </div>
@@ -176,5 +411,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-29 03:00:37.979193+00:00
+Build Date UTC : 2021-03-29 03:01:02.466685+00:00
 -->
