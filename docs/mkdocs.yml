@@ -2,12 +2,10 @@ site_name: CMPUT 401 Assignment 2
 theme: readthedocs
 nav:
   - Test Plan: index.md
-  - Test Case: testcase.md
-  - Test Report: testreport.md
   - Temporary Issues & PR: Issues_and_pull_requests.md
   - Values Test Case Document: testcase_values.md
-  - Data Tests Case Document: testcase_datatests.md
-  - Invalid Tickers Case Document: testcase_invalidtickers.md
   - Values Test Case Report Document: testcase_report_values.md
+  - Data Tests Case Document: testcase_datatests.md
   - Data Tests Case Report Document: testcase_report_datatests.md
+  - Invalid Tickers Case Document: testcase_invalidtickers.md
   - Invalid Tickers Case Report Document: testcase_report_invalidtickers.md
