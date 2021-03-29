@@ -5,7 +5,7 @@ Test Stage: Unit Testing
 
 Test Date: Mar 27, 2021
 
-Testers: Spencer von der Ohe
+Testers: Cameron, Ryan
 
 Test Case Description: Testing negative, positive, zero, quarterly negative, quarterly positive, quarterly zero earnings requests for the .earnings methods of the ticker.py for the yfinance module.
 
