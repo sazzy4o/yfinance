@@ -10,3 +10,4 @@ nav:
   - Invalid Tickers Case Document: testcase_invalidtickers.md
   - Values Test Case Report Document: testcase_report_values.md
   - Data Tests Case Report Document: testcase_report_datatests.md
+  - Invalid Tickers Case Report Document: testcase_report_invalidtickers.md
