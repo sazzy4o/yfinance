@@ -147,23 +147,16 @@ help divvy out work and to create in depth tests.
 
 **5 Software Fixes**
 
-Since we didn’t find any serious problems with the functionalities
-that we were testing, we will not be suggesting any fixes, nor will we
-be linking pull requests. This is simply because we have no
-suggestions to make, as the code worked as intended. As well,
+a. Is there a pull request that implements a solution to the problems identified by your tests? 
 
-a. Is there a pull request that implements a solution to the problems
-identified by your tests?
-All of the pull requests that we found related to our section of the
-code base we all closed and fixed.
+No, all of the pull requests that we found related to our section of the code base were all closed/merged and fixed.
 
-b. Is there a quick fix that could be proposed to the code so that the
-code passes the test?
+b. Is there a quick fix that could be proposed to the code so that the code passes the test? 
 
-The tests that we ran successfully completed. The results passed and
-were expected. For example, invalid tickers returned expected errors
-instead of producing bad data. This forces the user to input ticker
-information correctly. No quick fixes are needed to be proposed.
+The tests that we ran successfully completed. The results that we received were what we had expected. For example, invalid tickers returned expected errors instead of producing bad data. This forces the user to input ticker information correctly. No quick fixes are needed to be proposed.
+Since we didn’t find any serious problems with the functionalities that we were testing, we will not be suggesting any fixes, nor will we be linking pull requests. This is simply because we have no suggestions to make, as the code worked as intended.
+
+<br>
 
 **6 Test Environment**
 
