@@ -1,4 +1,4 @@
-# Test Case Report
+# Test Case Invalid Tickers Report
 
 ## General Infromation
 Test Stage: Unit Testing
@@ -44,7 +44,30 @@ Procedural Requirements:<br>
 Ensure the “data” folder contains the correct json files. Must run `pip install . -editable` inside the yfinance folder in order to install yfinance’s required additional modules.
 
 ## Test
-Test Items: 
+Test Items:<br>
+`invalid = yf.Ticker('InvalidTickerName')
+with self.assertRaises(ValueError):
+    invalid.earnings
+
+invalid = yf.Ticker('') #test empty
+with self.assertRaises(HTTPError):
+    invalid.earnings
+
+invalid = yf.Ticker('LEHLQ') #test debunct
+with self.assertRaises(KeyError):
+    invalid.earnings
+
+invalid = yf.Ticker('GOOE') #test misspelled (like GOOE when we want GOOG)
+with self.assertRaises(KeyError):
+    invalid.earnings
+
+invalid = yf.Ticker(' ') # test white space
+with self.assertRaises(InvalidURL):
+    invalid.earnings
+
+invalid = yf.Ticker('123') # test with numbers
+with self.assertRaises(KeyError):
+    invalid.earnings`
 
 Test Features:
 
@@ -58,10 +81,17 @@ The test case is run with the unittest module. This test case is set up under th
 Expected Results of Case:<br>
 The output will say that a test failed if a test failed. It will show the following if the test is completed successfully:
 
-`.....`
-`---------------------------------------------------`
-`Ran 5 tests in 9.537s`
+`.`
+`----------------------------------------------------------------------`
+`Ran 1 test in 12.580s`
+
 `OK`
 
 ## Actual Results
 Output Specifications:
+
+`.`
+`----------------------------------------------------------------------`
+`Ran 1 test in 12.580s`
+
+`OK`
