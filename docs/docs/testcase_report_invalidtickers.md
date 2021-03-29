@@ -7,7 +7,7 @@ Test Date: Mar 27, 2021
 
 Testers: Cameron, Ryan
 
-Test Case Description: Testing negative, positive, zero, quarterly negative, quarterly positive, quarterly zero earnings requests for the .earnings methods of the ticker.py for the yfinance module.
+Test Case Description: Testing the response from invalid ticker requests for the ticker.py file in the yfinance module.
 
 Test Case Number: 6
 
@@ -15,7 +15,7 @@ Results: Passed all tests
 
 ## Introduction
 
-Requirement(s) to be tested: .earnings 
+Requirement(s) to be tested: ticker
 
 Roles and Responsibilities: The team's goal was to test for the proper response from the .earnings method for multiple different valid and invalid inputs.
 
