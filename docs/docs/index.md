@@ -24,11 +24,12 @@ and “.quarterly\_earnings” functions in the ticker.py file
 
 |   Name   | Role                          |
 |:--------:|-------------------------------|
-| Chelsea  | Test - Data tests             |
+| Chelsea  | Tester - Data tests           |
 | Cameron  | Tester - Ticker tests         |
 | Cam      | Tester- Data tests            |
 | Spencer  | Tester - Test earnings values |
 | Ryan     | Tester - Ticker Tests         |
+
 <br>
 
 **2 Scope**
