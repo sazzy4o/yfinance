@@ -13,7 +13,7 @@ from pathlib import Path
 from mock import get_mocked_get_json
 from math import isnan
 
-# Mock based on https://stackoverflow.com/a/28507806/3558475:
+# Mocks based on https://stackoverflow.com/a/28507806/3558475
 data_path = Path(__file__).parent/'data'
 
 
